@@ -11,7 +11,7 @@ header {
 }
 
 .container {
-	padding-left: 300px;
+	padding-left: 260px;
 	padding-top: 50px;
 }
 
@@ -31,6 +31,10 @@ footer {
 .response {
 	color: white;
 	font-size: 12px;
+}
+
+#answer {
+	display: none;
 }
 
 	
