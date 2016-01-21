@@ -7,14 +7,13 @@ header {
 }
 
 .container {
-	padding-left: 325px;
+	padding-left: 225px;
 }
 
 footer {
 	background-color: #8cd9b1;
-	margin-bottom: 100px;
-	margin-right: 600px;
-	padding-left: 7px;
+	float: left 40%;
+	
 }
 
 	
