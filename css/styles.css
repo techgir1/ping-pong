@@ -17,8 +17,16 @@ footer {
 	margin-top: 25px;
 	padding-right: 50px;
 	padding-left: 15px;
-	padding-bottom: 600px;
-	
+	padding-bottom: 600px;	
+}
+
+.tags {
+	color: #ffe5b3;
+}
+
+.response {
+	color: white;
+	font-size: 12px;
 }
 
 	
