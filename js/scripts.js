@@ -1,8 +1,6 @@
+function pingPong(num) {
 
-
-$(document).ready(function() {
+	var ping = 3;
+	var pong = 5;
+	var pingpong = 15;
 }
-
-  });
-
-});
