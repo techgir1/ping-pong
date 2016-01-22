@@ -23,6 +23,7 @@ var pingPong = function(inputNumber) {
 
 $(document).ready(function() {
   $("form#ping-pong").submit(function(event) {
+    
 
     var inputNumber = $("input#inputNumber").val();
     var result = pingPong(inputNumber);
