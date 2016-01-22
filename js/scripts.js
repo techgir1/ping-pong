@@ -1,35 +1,36 @@
-var pingPong = function(userInput) {
-	var range = [];
-    for(var i = 1; i <= userInput; i++) {
+var pingPong = function(inputNumber) {
 
-    	if(i % 15 === 0) {
-    		range.push("pingpong");
-    	}
-    	else if(i % 3 === 0) {
-    		range.push("ping");
-    	}
-    	else if(i % 5 === 0) {
-    		range.push("pong");
-    	}
-    	else {
-    		range.push(i);
-    	}
-    };
-    return range;
+  var rangeCount = [];
+
+  for (var i = 1; i <= inputNumber; i++) {
+
+    if (i % 15 === 0) {
+      rangeCount.push("pingpong");
+    }
+    else if (i % 5 === 0) {
+      rangeCount.push("pong");
+    }
+    else if (i % 3 === 0) {
+      rangeCount.push("ping");
+    }
+    else {
+      rangeCount.push(i);
+    }
+  };
+  return rangeCount;
 };
 
+
 $(document).ready(function() {
-	$("form#pingPong").submit(function(event) {
+  $("form#ping-pong").submit(function(event) {
 
-		var userInput = $("input#userInput").val();
-		var result = pingPong(userInput);
+    var inputNumber = $("input#inputNumber").val();
+    var result = pingPong(inputNumber);
 
-		for(i = 0; i < result.length; i ++) {
-			$("#result").append("<li>"+result[i]+"</li>");
+    for (i = 0; i < result.length; i ++) {
+      $("#result").prepend("<li>" + result[i] + "</li>");
+    };
 
-	};
-
-	event.preventDefault();
-	
+    event.preventDefault();
   });
 });
