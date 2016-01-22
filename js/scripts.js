@@ -1,23 +1,23 @@
 var pingPong = function(inputNumber) {
 
-  var rangeCount = [];
+  var range = [];
 
   for (var i = 1; i <= inputNumber; i++) {
 
     if (i % 15 === 0) {
-      rangeCount.push("pingpong");
+      range.push("pingpong");
     }
     else if (i % 5 === 0) {
-      rangeCount.push("pong");
+      range.push("pong");
     }
     else if (i % 3 === 0) {
-      rangeCount.push("ping");
+      range.push("ping");
     }
     else {
-      rangeCount.push(i);
+      range.push(i);
     }
   };
-  return rangeCount;
+  return range;
 };
 
 
