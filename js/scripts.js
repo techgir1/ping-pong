@@ -17,3 +17,19 @@ var pingPong = function(userInput) {
     };
     return range;
 };
+
+$(document).ready(function() {
+	$("form#pingPong").submit(function(event) {
+
+		var userInput = $("input#userInput").val();
+		var result = pingPong(userInput);
+
+		for(i = 0; i < result.length; i ++) {
+			$("#result").append("<li>" + result[i] + "</li>");
+
+	};
+
+	event.preventDefault();
+	
+  });
+});
