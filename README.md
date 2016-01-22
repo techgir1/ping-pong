@@ -17,6 +17,6 @@ link to site on GitHub Pages:
 [ping-pong][https://techgir1.github.io/ping-pong]
 
 
-[Copyright and license information][LICENSE.md] 
+[Copyright and license information][https://github.com/techgir1/ping-pong/blob/master/LICENSE.md] 
 
 
