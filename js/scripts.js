@@ -11,7 +11,7 @@ var pingPong = function(inputNumber) {
       range.push("pong");
     }
     else if (i % 3 === 0) {
-      range.push("ping");
+      range.push("ping"); 
     }
     else {
       range.push(i);
@@ -19,19 +19,27 @@ var pingPong = function(inputNumber) {
   };
   return range;
 };
-
-
+  
 $(document).ready(function() {
   $("form#ping-pong").submit(function(event) {
+    $("ul").empty();
     
-
     var inputNumber = $("input#inputNumber").val();
     var result = pingPong(inputNumber);
 
     for (i = 0; i < result.length; i ++) {
-      $("#result").prepend("<li>" + result[i] + "</li>");
+      // $("#result").prepend("<li>" + result[i] + "</li>");
+      $("#result").append("<li>" + result[i] + "</li>");
     };
 
     event.preventDefault();
   });
 });
+
+
+
+
+
+
+
+
