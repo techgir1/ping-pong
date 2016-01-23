@@ -31,7 +31,6 @@ $(document).ready(function() {
       $("#result").append("<li>" + result[i] + "</li>");
       // $("#result").prepend("<li>" + result[i] + "</li>");
     };
-    };
 
     event.preventDefault();
   });
